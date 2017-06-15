@@ -12,8 +12,8 @@ app.controller("myCtrl", function ($scope) {
               {
                 text: "Statistics Thing 1",
                 url: "http://http://google.com",
-                desc:
-                "Some information and stuff for link 1 in section 1 in unit 1. The next button doesn't have a description",
+                // desc:
+                // "Some information and stuff for link 1 in section 1 in unit 1. The next button doesn't have a description",
                 icon: "fa-bath"
               },
               {
