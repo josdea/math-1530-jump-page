@@ -1,5 +1,5 @@
 var app = angular.module("jumpPage", []);
-app.controller("myCtrl", function($scope) {
+app.controller("myCtrl", function ($scope) {
   $scope.jumppage = {
     pageTitle: "Math 1530 Jump Page",
     units: [
@@ -11,14 +11,14 @@ app.controller("myCtrl", function($scope) {
             links: [
               {
                 text: "Statistics Thing 1",
-                url: "http://google.com",
+                url: "http://http://google.com",
                 desc:
-                  "Some information and stuff for link 1 in section 1 in unit 1. The next button doesn't have a description",
+                "Some information and stuff for link 1 in section 1 in unit 1. The next button doesn't have a description",
                 icon: "fa-bath"
               },
               {
                 text: "Statistics Thing 2",
-                url: "yahoo.com",
+                url: "http://yahoo.com",
                 icon: "fa-camera-retro"
               }
             ]
@@ -28,42 +28,42 @@ app.controller("myCtrl", function($scope) {
             links: [
               {
                 text: "Statistics Thing 2.1",
-                url: "google.com",
+                url: "http://google.com",
                 icon: "fa-wpexplorer"
               },
               {
                 text: "Statistics Thing 2",
-                url: "yahoo.com",
+                url: "http://yahoo.com",
                 desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
+                "Some information and stuff 2 for link 2 in unit 1 and section 2",
                 icon: "fa-telegram"
               },
               {
                 text: "Statistics Thing 2.1",
-                url: "google.com",
+                url: "http://google.com",
                 desc:
-                  "Some information and stuff for link 1 in section 2 in unit 1",
+                "Some information and stuff for link 1 in section 2 in unit 1",
                 icon: "fa-ravelry"
               },
               {
                 text: "Statistics Thing 2",
-                url: "yahoo.com",
+                url: "http://yahoo.com",
                 desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
+                "Some information and stuff 2 for link 2 in unit 1 and section 2",
                 icon: "fa-briefcase"
               },
               {
                 text: "Statistics Thing 2.1",
-                url: "google.com",
+                url: "http://google.com",
                 desc:
-                  "Some information and stuff for link 1 in section 2 in unit 1",
+                "Some information and stuff for link 1 in section 2 in unit 1",
                 icon: "fa-cogs"
               },
               {
                 text: "Statistics Thing 2",
-                url: "yahoo.com",
+                url: "http://yahoo.com",
                 desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
+                "Some information and stuff 2 for link 2 in unit 1 and section 2",
                 icon: "fa-database"
               }
             ]
@@ -73,51 +73,51 @@ app.controller("myCtrl", function($scope) {
       {
         title: "Unit 2",
         sections: [{ title: "Section 2.1" },
-                  {
-            title: "Section 2.2",
-            links: [
-              {
-                text: "Statistics Thing 2.1",
-                url: "google.com",
-                icon: "fa-wpexplorer"
-              },
-              {
-                text: "Statistics Thing 2",
-                url: "yahoo.com",
-                desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
-                icon: "fa-telegram"
-              },
-              {
-                text: "Statistics Thing 2.1",
-                url: "google.com",
-                desc:
-                  "Some information and stuff for link 1 in section 2 in unit 1",
-                icon: "fa-ravelry"
-              },
-              {
-                text: "Statistics Thing 2",
-                url: "yahoo.com",
-                desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
-                icon: "fa-briefcase"
-              },
-              {
-                text: "Statistics Thing 2.1",
-                url: "google.com",
-                desc:
-                  "Some information and stuff for link 1 in section 2 in unit 1",
-                icon: "fa-cogs"
-              },
-              {
-                text: "Statistics Thing 2",
-                url: "yahoo.com",
-                desc:
-                  "Some information and stuff 2 for link 2 in unit 1 and section 2",
-                icon: "fa-database"
-              }
-            ]
-          }]
+        {
+          title: "Section 2.2",
+          links: [
+            {
+              text: "Statistics Thing 2.1",
+              url: "http://google.com",
+              icon: "fa-wpexplorer"
+            },
+            {
+              text: "Statistics Thing 2",
+              url: "http://yahoo.com",
+              desc:
+              "Some information and stuff 2 for link 2 in unit 1 and section 2",
+              icon: "fa-telegram"
+            },
+            {
+              text: "Statistics Thing 2.1",
+              url: "http://google.com",
+              desc:
+              "Some information and stuff for link 1 in section 2 in unit 1",
+              icon: "fa-ravelry"
+            },
+            {
+              text: "Statistics Thing 2",
+              url: "http://yahoo.com",
+              desc:
+              "Some information and stuff 2 for link 2 in unit 1 and section 2",
+              icon: "fa-briefcase"
+            },
+            {
+              text: "Statistics Thing 2.1",
+              url: "http://google.com",
+              desc:
+              "Some information and stuff for link 1 in section 2 in unit 1",
+              icon: "fa-cogs"
+            },
+            {
+              text: "Statistics Thing 2",
+              url: "http://yahoo.com",
+              desc:
+              "Some information and stuff 2 for link 2 in unit 1 and section 2",
+              icon: "fa-database"
+            }
+          ]
+        }]
       },
       {
         title: "Unit 3",
@@ -130,17 +130,17 @@ app.controller("myCtrl", function($scope) {
       {
         title: "Unit 5",
         sections: [{
-            title: "Section 5.1",
-            links: [
-              {
-                text: "Statistics Thing 1",
-                url: "http://google.com",
-                desc:
-                  "Some information and stuff ",
-                icon: "fa-bath"
-              }
-            ]
-          },]
+          title: "Section 5.1",
+          links: [
+            {
+              text: "Statistics Thing 1",
+              url: "http://http://google.com",
+              desc:
+              "Some information and stuff ",
+              icon: "fa-bath"
+            }
+          ]
+        },]
       }
     ]
   };

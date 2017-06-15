@@ -1,65 +1,50 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
   <meta charset="UTF-8">
   <title>Math 1530 Jump Page</title>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-      <link rel="stylesheet" href="css/style.css">
-
-  
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!-- To edit this page, you must edit the JSON file in the javascript portion -->
+  <div ng-app="jumpPage" ng-controller="myCtrl">
+    <div class="jumbotron">
+      <h1>{{jumppage.pageTitle}}</h1>
+      <p><i class="fa fa-book"></i>Read, <i class="fa fa-play"></i>Watch, <i class="fa fa-hand-o-right"></i>Try<i class="fa fa-exchange"></i>Do</p><br>
+      <ul>
+        <li ng-repeat="unit in jumppage.units"><a ng-href="{{'#'+unit.title}}">{{unit.title}}</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div ng-attr-id="{{unit.title}}" ng-repeat="unit in jumppage.units">
+        <h2><a href="#top" title="go to top">{{unit.title}}</a></h2>
+        <section ng-repeat="section in unit.sections">
 
-<div ng-app="jumpPage" ng-controller="myCtrl">
-  <div class="jumbotron">
-    <h1>{{jumppage.pageTitle}}</h1>
-    <p><i class="fa fa-book"></i>Read, <i class="fa fa-play"></i>Watch, <i class="fa fa-hand-o-right"></i>Try<i class="fa fa-exchange"></i>Do</p><br>
-    <ul>
-      <li ng-repeat="unit in jumppage.units"><a ng-href="{{'#'+unit.title}}">{{unit.title}}</a></li>
-    </ul>
+          <h3> <a href="#top" title="go to top">{{section.title}}</a></h3>
+          <div class="row text-center">
+            <div ng-repeat="link in section.links" class="col-sm-3">
+              <a ng-href="{{link.url}}" target="_blank">
+                <div class="box" tabindex="0">
 
-  </div>
-  <div class="container">
-    <div ng-attr-id="{{unit.title}}" ng-repeat="unit in jumppage.units">
-      <h2><a href="#top" title="go to top">{{unit.title}}</a></h2>
-      <section ng-repeat="section in unit.sections">
-
-        <h3> <a href="#top" title="go to top">{{section.title}}</a></h3>
-        <div class="row text-center">
-          <div ng-repeat="link in section.links" class="col-sm-3">
-            <a ng-href="{{link.url}}" target="_blank">
-              <div class="box" tabindex="0">
-
-                <i ng-class="link.icon" class="fa fa-5x"></i>
-                <p>{{link.text}}</p>
-              </div>
-            </a>
-
-            <p ng-if="link.desc" class="desc">{{link.desc}}</p>
-
-            <!--       end of column -->
+                  <i ng-class="link.icon" class="fa fa-5x"></i>
+                  <p>{{link.text}}</p>
+                </div>
+              </a>
+              <p ng-if="link.desc" class="desc">{{link.desc}}</p>
+            </div>
           </div>
-
-          <!--     end of ng row -->
-        </div>
-
-        <hr>
-      </section>
-
-
-      <!-- end of container -->
+          <hr>
+        </section>
+      </div>
     </div>
 
-    <!-- end of app -->
-  </div>
-  
     <script src="js/index.js"></script>
-
 </body>
+
 </html>
