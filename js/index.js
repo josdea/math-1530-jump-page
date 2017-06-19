@@ -14,7 +14,7 @@ app.controller("myCtrl", function ($scope) {
               {
                 "text": "Statistics Thing 1",
                 "url": "http://http://google.com",
-                "icon": "fa-bath"
+                "icon": "fa-bath "
               },
               {
                 "text": "Statistics Thing 2",
