@@ -34,25 +34,57 @@ a:hover .box, a:focus .box{
   margin-left: 20px;
 }
 
-.jumbotron ul{
+.my-nav ul{
    list-style: none;
   margin: none;
   padding: none;
 text-align: center;
 }
 
-.jumbotron ul li{
+.my-nav ul li{
   text-align: center;
+}
+.my-nav a:link{
+   display: inline;
+}
+.my-nav li:last-of-type{
+   border: none;
+}
+.my-nav ul li a{
+  padding: .5em .8em;
+}
+.subtitle{
+   display: none;
+ }
+
+
+@media (min-width: 700px){
+ .my-nav ul li a{
+  padding: 1em 2em;
+}
+
+}
+
+@media (min-width: 800px){
+ .my-nav ul li a{
+  padding: 1.5em 2.5em;
+}
+}
+
+@media (min-width: 500px){
+ 
+ .subtitle{
+   display: block;
+ }
+
+  .my-nav ul li{
+  /*text-align: center;*/
   display: inline;
    border-right: 1px;
   border-right-style: solid;
+  /*background-color: pink;*/
+/*}
+.my-nav ul li a{
+  padding: 1em 2em;*/
 }
-.jumbotron a:link{
-   display: inline;
-}
-.jumbotron li:last-of-type{
-   border: none;
-}
-.jumbotron ul li a{
-  padding: 2em;
 }
